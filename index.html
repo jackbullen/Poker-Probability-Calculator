@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Poker Probability Calculator</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Poker Probability Calculator</h1>
+    <form id="pokerForm">
+        <div>
+            <label for="card1Suit">Card 1 Suit:</label>
+            <select id="card1Suit" required>
+                <option value="Hearts">Hearts</option>
+                <option value="Diamonds">Diamonds</option>
+                <option value="Clubs">Clubs</option>
+                <option value="Spades">Spades</option>
+            </select>
+
+            <label for="card1Rank">Rank:</label>
+            <select id="card1Rank" required>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="J">J</option>
+                <option value="Q">Q</option>
+                <option value="K">K</option>
+                <option value="Ace">Ace</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="card2Suit">Card 2 Suit:</label>
+            <select id="card2Suit" required>
+                <option value="Hearts">Hearts</option>
+                <option value="Diamonds">Diamonds</option>
+                <option value="Clubs">Clubs</option>
+                <option value="Spades">Spades</option>
+            </select>
+
+            <label for="card2Rank">Rank:</label>
+            <select id="card2Rank" required>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="J">J</option>
+                <option value="Q">Q</option>
+                <option value="K">K</option>
+                <option value="Ace">Ace</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="players">Number of Players:</label>
+            <input type="number" id="players" min="2" max="10" required>
+        </div>
+        <button type="submit">Calculate Probability</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="poker.js"></script>
+</body>
+</html>
